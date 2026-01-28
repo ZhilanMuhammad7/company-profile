@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhilan Muhammad | IT Specialist & Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">ZHILAN<span class="dot">.</span></a>
+            <ul class="nav-links">
+                <li><a href="#work" data-i18n="nav_projects">Projects</a></li>
+                <li><a href="#experience" data-i18n="nav_experience">Experience</a></li>
+                <li><a href="#services" data-i18n="nav_expertise">Expertise</a></li>
+                <li><a href="#about" data-i18n="nav_about">About</a></li>
+                <li class="lang-switch">
+                    <button id="lang-btn" onclick="toggleLanguage()">EN</button>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <span class="badge">Full Stack Developer Portfolio</span>
+
+            <h1 data-i18n="hero_title">Membangun Solusi Digital <span class="gradient-text">Profesional & Berkelas
+                    Enterprise</span>.</h1>
+
+            <p class="hero-sub" data-i18n="hero_desc">
+                Selamat datang di portfolio Zhilan Muhammad. Kumpulan studi kasus pengembangan aplikasi Mobile & Web
+                yang dirancang untuk efisiensi bisnis, stabilitas, dan performa tinggi.
+            </p>
+
+            <div class="cta-group">
+                <a href="#work" class="btn-primary" data-i18n="btn_portfolio">Jelajahi Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container about-container">
+            <div class="about-text">
+                <h2 class="section-title" data-i18n="section_about">About Zhilan</h2>
+                <p data-i18n="about_p1">
+                    Saat ini saya bekerja sebagai <strong>IT Support Specialist di NESR</strong> (National Energy
+                    Services Reunited), di mana saya memastikan kelancaran operasional teknologi dan infrastruktur
+                    perusahaan.
+                </p>
+                <p data-i18n="about_p2">
+                    Namun, latar belakang saya adalah <strong>Software Development</strong>. Saya memiliki kemampuan
+                    unik untuk memahami "Hardware/Network" dan "Code" secara bersamaan. Saya membangun aplikasi yang
+                    tidak hanya bagus secara visual, tapi juga stabil di sisi server dan infrastruktur.
+                </p>
+            </div>
+            <div class="about-stats">
+                <div class="stat">
+                    <h3 class="gradient-text">4+</h3>
+                    <span data-i18n="stat_exp">Years Exp</span>
+                </div>
+                <div class="stat">
+                    <h3 class="gradient-text">5+</h3>
+                    <span data-i18n="stat_proj">Projects Done</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-i18n="section_projects">Selected Works</h2>
+            <div class="project-grid">
+
+                <article class="project-card" onclick="openModal('kpp')">
+                    <div class="card-image">
+                        <div class="placeholder-img"
+                            style="background-image: url('assets/KPP-Martabe Pict/unnamed.jpg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="overlay"><span data-i18n="view_details">Lihat Detail</span></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="tags">
+                            <span class="tag">Laravel</span>
+                            <span class="tag">React Native</span>
+                            <span class="tag">System</span>
+                        </div>
+                        <h3 data-i18n="proj_kpp_title">KPP Martabe Utility System</h3>
+                        <p data-i18n="proj_kpp_desc">Sistem manajemen PDAM end-to-end: dari pencatatan meter QR hingga
+                            billing otomatis.</p>
+                    </div>
+                </article>
+
+                <article class="project-card" onclick="openModal('aerix')">
+                    <div class="card-image">
+                        <div class="placeholder-img"
+                            style="background-image: url('assets/AERIX Pict/unnamed (1).jpg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="overlay"><span data-i18n="view_details">Lihat Detail</span></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="tags">
+                            <span class="tag">SaaS</span>
+                            <span class="tag">Multi-Tenant</span>
+                            <span class="tag">Laravel 12</span>
+                        </div>
+                        <h3 data-i18n="proj_aerix_title">AERIX SaaS Platform</h3>
+                        <p data-i18n="proj_aerix_desc">Platform SaaS Multi-Tenant untuk manajemen PDAM dengan arsitektur
+                            hybrid web & mobile.</p>
+                    </div>
+                </article>
+
+                <article class="project-card" onclick="openModal('dara')">
+                    <div class="card-image">
+                        <div class="placeholder-img"
+                            style="background-image: url('assets/Dara-Pict/unnamed.jpg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="overlay"><span data-i18n="view_details">Lihat Detail</span></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="tags">
+                            <span class="tag">NESR Internal</span>
+                            <span class="tag">E-Journey</span>
+                            <span class="tag">Digitalization</span>
+                        </div>
+                        <h3 data-i18n="proj_dara_title">Dara Enterprise App</h3>
+                        <p data-i18n="proj_dara_desc">Aplikasi internal NESR untuk manajemen perjalanan dinas
+                            (E-Journey), persetujuan bertingkat, dan aset.</p>
+                    </div>
+                </article>
+
+                <article class="project-card" onclick="openModal('iatmi')">
+                    <div class="card-image">
+                        <div class="placeholder-img"
+                            style="background-image: url('assets/IATMI-Pict/unnamed (1).jpg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="overlay"><span data-i18n="view_details">Lihat Detail</span></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Front-End</span>
+                            <span class="tag">iOS & Android</span>
+                        </div>
+                        <h3 data-i18n="proj_iatmi_title">IATMI Official App</h3>
+                        <p data-i18n="proj_iatmi_desc">Pengembangan Front-End mobile cross-platform dengan integrasi
+                            REST API yang kompleks.</p>
+                    </div>
+                </article>
+
+                <article class="project-card" onclick="openModal('olympiad')">
+                    <div class="card-image">
+                        <div class="placeholder-img"
+                            style="background-image: url('assets/Olympiad-Pict/unnamed.jpg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="overlay"><span data-i18n="view_details">Lihat Detail</span></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="tags">
+                            <span class="tag">United Tractors</span>
+                            <span class="tag">Gamification</span>
+                            <span class="tag">React.js</span>
+                        </div>
+                        <h3 data-i18n="proj_olympiad_title">Olympiad Wellness App</h3>
+                        <p data-i18n="proj_olympiad_desc">Platform gamifikasi kebugaran korporat untuk karyawan PT
+                            United Tractors Tbk (Astra).</p>
+                    </div>
+                </article>
+
+                <article class="project-card" onclick="openModal('nesr')">
+                    <div class="card-image">
+                        <div class="placeholder-img" style="background-image: url('assets/LMS-Pict/unnamed (1).jpg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="overlay"><span data-i18n="view_details">Lihat Detail</span></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="tags"><span class="tag">Enterprise</span><span class="tag">LMS</span></div>
+                        <h3 data-i18n="proj_nesr_title">NESR LMS Integration</h3>
+                        <p data-i18n="proj_nesr_desc">Sistem manajemen pembelajaran korporat.</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title" data-i18n="section_experience">Professional Journey</h2>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Dec 2025 - Present</div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="job_nesr_role">IT Support Specialist</h3>
+                        <span class="company">NESR (National Energy Services Reunited)</span>
+                        <p data-i18n="job_nesr_desc">Mengelola infrastruktur IT operasional dan mengembangkan solusi
+                            internal (Dara Apps) untuk efisiensi bisnis perusahaan energi multinasional.</p>
+                        <div class="tech-badges">
+                            <span>React.js</span><span>PostgreSQL</span><span>IT Ops</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Sep 2023 - Jan 2024</div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="job_ut_role">Frontend Developer (Intern)</h3>
+                        <span class="company">PT United Tractors Tbk (Astra Group)</span>
+                        <p data-i18n="job_ut_desc">Mengembangkan aplikasi gamifikasi korporat "Olympiad". Berkolaborasi
+                            dalam tim agile menggunakan TypeScript dan React untuk standar Enterprise.</p>
+                        <div class="tech-badges">
+                            <span>React.js</span><span>TypeScript</span><span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Apr 2018 - Jul 2018</div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="job_paktel_role">Network Engineer (Intern)</h3>
+                        <span class="company">Pasifiktel Indotama</span>
+                        <p data-i18n="job_paktel_desc">Fondasi awal dalam infrastruktur jaringan. Menangani konfigurasi
+                            jaringan dan troubleshooting yang kini mendukung pemahaman saya dalam deployment server.</p>
+                        <div class="tech-badges">
+                            <span>Networking</span><span>Troubleshooting</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title" data-i18n="section_expertise">Technical Expertise</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <i data-feather="server"></i>
+                    <h3 data-i18n="serv_1_title">Backend & Systems</h3>
+                    <p data-i18n="serv_1_desc">Laravel, Database Design, API Architecture.</p>
+                </div>
+                <div class="service-card">
+                    <i data-feather="smartphone"></i>
+                    <h3 data-i18n="serv_2_title">Mobile & Frontend</h3>
+                    <p data-i18n="serv_2_desc">Flutter, React Native, Responsive Web.</p>
+                </div>
+                <div class="service-card">
+                    <i data-feather="settings"></i>
+                    <h3 data-i18n="serv_3_title">IT Operations</h3>
+                    <p data-i18n="serv_3_desc">Troubleshooting, System Maintenance, Integration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Zhilan Muhammad.</p>
+        </div>
+    </footer>
+
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div id="modal-body">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>
