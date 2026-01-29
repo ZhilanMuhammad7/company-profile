@@ -16,6 +16,8 @@ const content = {
         proj_dongiv_desc: "Aplikasi donasi mobile dengan transparansi dana.",
         proj_nesr_title: "NESR LMS Integration",
         proj_nesr_desc: "Sistem manajemen pembelajaran korporat.",
+        proj_esmart_title: "E-Smart",
+        proj_esmart_desc: "Elektronik Sistem Monitoring Realisasi Tugas.",
         section_about: "Tentang Zhilan",
         about_p1: "Saat ini saya bekerja sebagai <strong>IT Support Specialist di NESR</strong> (National Energy Services Reunited), memastikan kelancaran operasional teknologi perusahaan.",
         about_p2: "Latar belakang saya adalah <strong>Software Development</strong>. Saya memahami hardware dan kode sekaligus, membangun aplikasi yang stabil dan efisien.",
@@ -108,10 +110,10 @@ const projectsData = {
         desc_id: "Platform Multi-Tenant SaaS untuk manajemen perusahaan air (PDAM). Sistem ini dirancang dengan arsitektur hybrid yang menjamin <strong>Isolasi Data</strong> antar penyewa (Tenant).<br><br><strong>Fitur & Arsitektur:</strong><br>• <strong>SaaS Engine:</strong> Pendaftaran otomatis dengan *Free Trial* 7 hari, verifikasi email, dan manajemen paket langganan dinamis.<br>• <strong>Hybrid Ecosystem:</strong> Web App (PWA) sebagai HQ untuk Admin menggunakan Inertia.js + Vite, dan Mobile App untuk staf lapangan menggunakan React Native Expo.<br>• <strong>Secure Mobile Login:</strong> Menggunakan kombinasi Email, Password, dan 'PDAM Code' unik untuk memastikan staf masuk ke tenant yang benar.<br>• <strong>Financial:</strong> Generasi invoice otomatis berdasarkan bacaan meter dan sistem penggajian (payroll) staf berbasis kinerja.",
         desc_en: "Multi-Tenant SaaS Platform for water utility management. Designed with a secure hybrid architecture ensuring strict <strong>Data Isolation</strong> between tenants.<br><br><strong>Features & Architecture:</strong><br>• <strong>SaaS Engine:</strong> Automated onboarding flow with 7-day Free Trial, email verification, and dynamic subscription plan management.<br>• <strong>Hybrid Ecosystem:</strong> Web App (PWA) as 'HQ' for Admins using Inertia.js + Vite, and Mobile App for field staff using React Native Expo.<br>• <strong>Secure Mobile Login:</strong> Unique 'PDAM Code' authentication system to route staff to their specific tenant database.<br>• <strong>Financial:</strong> Automated invoice generation based on meter readings and performance-based staff payroll system.",
         images: [
-            { src: "assets/AERIX Pict/screencapture-127-0-0-1-8000-2025-11-07-09_03_12.png", type: "landscape" }, 
+            { src: "assets/AERIX Pict/screencapture-127-0-0-1-8000-2025-11-07-09_03_12.png", type: "landscape" },
             { src: "assets/AERIX Pict/127.0.0.1_8000_login.png", type: "landscape" },
             { src: "assets/AERIX Pict/screencapture-127-0-0-1-8000-register-2025-11-07-09_04_59.png", type: "landscape" },
-            { src: "assets/AERIX Pict/Screenshot_2025-11-08-13-43-27-144_com.aerix.app.jpg", type: "portrait" }, 
+            { src: "assets/AERIX Pict/Screenshot_2025-11-08-13-43-27-144_com.aerix.app.jpg", type: "portrait" },
             { src: "assets/AERIX Pict/Screenshot_2025-11-08-13-47-56-169_com.aerix.app.jpg", type: "portrait" },
             { src: "assets/AERIX Pict/Screenshot_2025-11-08-13-48-13-084_com.aerix.app.jpg", type: "portrait" },
             { src: "assets/AERIX Pict/Screenshot_2025-11-08-13-48-16-953_com.aerix.app.jpg", type: "portrait" },
@@ -132,7 +134,7 @@ const projectsData = {
         desc_id: "Platform manajemen operasional utilitas air (PDAM) yang komprehensif. <br><br><strong>Fitur Utama:</strong><br>• <strong>Mobile App (Staff):</strong> Pencatatan meter via QR Code, tiket perbaikan teknisi realtime, dan cetak struk pembayaran di tempat via printer thermal Bluetooth.<br>• <strong>Web Dashboard (Admin):</strong> Otomatisasi invoice bulanan dengan perhitungan diskon bertingkat yang kompleks, manajemen tarif dinamis, dan audit log lengkap.<br>• <strong>Backend:</strong> Menggunakan Laravel Reverb (WebSockets) untuk tracking status user realtime dan Cron Job untuk pemeliharaan database otomatis.",
         desc_en: "A comprehensive operational management platform for water utility (PDAM). <br><br><strong>Key Features:</strong><br>• <strong>Mobile App (Staff):</strong> QR Code meter reading, realtime technician ticketing, and on-site receipt printing via Bluetooth thermal integration.<br>• <strong>Web Dashboard (Admin):</strong> Automated monthly invoicing engine with complex multi-layered discount logic, dynamic tariff management, and full audit logs.<br>• <strong>Backend:</strong> Utilizes Laravel Reverb (WebSockets) for realtime user status tracking and scheduled Cron Jobs for automated database maintenance.",
         images: [
-            { src: "assets/KPP-Martabe Pict/Screenshot_2025-11-08-14-10-11-152_com.kpp.apps.jpg", type: "portrait" }, 
+            { src: "assets/KPP-Martabe Pict/Screenshot_2025-11-08-14-10-11-152_com.kpp.apps.jpg", type: "portrait" },
             { src: "assets/KPP-Martabe Pict/Screenshot_2025-11-08-14-10-48-405_com.kpp.apps.jpg", type: "portrait" },
             { src: "assets/KPP-Martabe Pict/Screenshot_2025-11-08-14-11-24-410_com.kpp.apps.jpg", type: "portrait" },
             { src: "assets/KPP-Martabe Pict/Screenshot_2025-11-08-14-11-48-323_com.kpp.apps.jpg", type: "portrait" },
@@ -187,13 +189,13 @@ const projectsData = {
         desc_id: "Aplikasi operasional internal untuk <strong>NESR (National Energy Services Reunited)</strong>. Bertujuan mendigitalkan proses manual menjadi alur kerja mobile yang efisien.<br><br><strong>Modul Utama:</strong><br>• <strong>E-Journey Management:</strong> Sistem pelacakan perjalanan dinas <em>end-to-end</em>. Mencakup pembuatan tiket perjalanan, pelacakan status realtime (Ongoing/Completed), dan generator laporan otomatis.<br>• <strong>Complex Approval System:</strong> Mengimplementasikan 'Approval JMP Matrix' untuk otorisasi bertingkat dan dashboard 'Pending Approval' untuk manajer.<br>• <strong>Smart Inventory:</strong> Manajemen aset perusahaan dengan pemindai QR Code, Import data massal dari Excel, dan Export laporan ke PDF langsung dari HP.",
         desc_en: "Internal operational superapp for <strong>NESR (National Energy Services Reunited)</strong>. Designed to digitize manual processes into efficient mobile workflows.<br><br><strong>Key Modules:</strong><br>• <strong>E-Journey Management:</strong> End-to-end business trip tracking. Includes trip creation, real-time status updates (Ongoing/Completed), and automated report generation.<br>• <strong>Complex Approval System:</strong> Implemented 'Approval JMP Matrix' for multi-level authorization and a 'Pending Approval' dashboard for managers.<br>• <strong>Smart Inventory:</strong> Corporate asset management featuring in-app QR Code scanning, bulk Excel Import, and direct PDF Report Export.",
         images: [
-            { src: "assets/Dara-Pict/iPhone-14-Plus-localhost.png", type: "portrait" }, 
-            { src: "assets/Dara-Pict/iPhone-14-Plus-localhost (1).png", type: "portrait" }, 
-            { src: "assets/Dara-Pict/iPhone-14-Plus-localhost (2).png", type: "portrait" }, 
-            { src: "assets/Dara-Pict/iPhone-14-Plus-localhost (3).png", type: "portrait" },   
-            { src: "assets/Dara-Pict/iPhone-14-Plus-localhost (4).png", type: "portrait" },   
-            { src: "assets/Dara-Pict/iPhone-14-Plus-localhost (5).png", type: "portrait" },   
-            { src: "assets/Dara-Pict/iPhone-14-Plus-localhost (6).png", type: "portrait" },   
+            { src: "assets/Dara-Pict/iPhone-14-Plus-localhost.png", type: "portrait" },
+            { src: "assets/Dara-Pict/iPhone-14-Plus-localhost (1).png", type: "portrait" },
+            { src: "assets/Dara-Pict/iPhone-14-Plus-localhost (2).png", type: "portrait" },
+            { src: "assets/Dara-Pict/iPhone-14-Plus-localhost (3).png", type: "portrait" },
+            { src: "assets/Dara-Pict/iPhone-14-Plus-localhost (4).png", type: "portrait" },
+            { src: "assets/Dara-Pict/iPhone-14-Plus-localhost (5).png", type: "portrait" },
+            { src: "assets/Dara-Pict/iPhone-14-Plus-localhost (6).png", type: "portrait" },
         ]
     },
 
@@ -209,6 +211,22 @@ const projectsData = {
             { src: "assets/LMS-Pict/iPhone-14-Plus-lmsindonesia.id (1).png", type: "portrait" },
             { src: "assets/LMS-Pict/iPhone-14-Plus-lmsindonesia.id (2).png", type: "portrait" },
         ]
+    },
+
+    esmart: {
+        title: "E-Smart",
+        tech: "PHP, Laravel, JavaScript, MySQL",
+        role: "System Integrator",
+        desc_id: "Aplikasi ini adalah solusi digital yang profesional namun santai untuk mendokumentasikan, mencatat, dan memonitor seluruh pekerjaan harian Anda dengan lebih terstruktur dan efisien. e-SMART memfasilitasi alur kerja tim, memastikan setiap tugas tercatat dan terdokumentasi dengan baik, serta memudahkan Atasan memberikan tugas, dan Bawahan mengajukan tugas.",
+        desc_en: "This app is a professional yet user-friendly digital solution for documenting, recording, and monitoring all your daily work in a more structured and efficient manner. e-SMART facilitates team workflow, ensuring every task is properly recorded and documented, and makes it easy for superiors to assign tasks and subordinates to submit them..",
+        images: [
+            { src: "assets/esmart/unnamed.png", type: "landscape" },
+            { src: "assets/esmart/image-1.png", type: "landscape" },
+            { src: "assets/esmart/image-2.png", type: "landscape" },
+            { src: "assets/esmart/image-3.png", type: "landscape" },
+            { src: "assets/esmart/image-4.png", type: "landscape" },
+            { src: "assets/esmart/image-5.png", type: "landscape" },
+        ]
     }
 };
 
@@ -217,7 +235,7 @@ let currentLang = 'id';
 function toggleLanguage() {
     currentLang = currentLang === 'id' ? 'en' : 'id';
     document.getElementById('lang-btn').innerText = currentLang.toUpperCase();
-    
+
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
         if (content[currentLang][key]) {
@@ -260,15 +278,15 @@ function openModal(projectId) {
     `;
 
     modal.style.display = "block";
-    document.body.style.overflow = "hidden"; 
+    document.body.style.overflow = "hidden";
 }
 
 function closeModal() {
     document.getElementById('projectModal').style.display = "none";
-    document.body.style.overflow = "auto"; 
+    document.body.style.overflow = "auto";
 }
 
-window.onclick = function(event) {
+window.onclick = function (event) {
     const modal = document.getElementById('projectModal');
     if (event.target == modal) {
         closeModal();
@@ -278,7 +296,7 @@ window.onclick = function(event) {
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
-    
+
     burger.addEventListener('click', () => {
         nav.classList.toggle('nav-active');
         burger.classList.toggle('toggle');
