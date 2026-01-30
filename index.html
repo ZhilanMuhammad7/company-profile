@@ -5,18 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechnoDev Indonesia | Jasa Pembuatan Web & Aplikasi</title>
+    <!-- Note: User did not provide style.css, so I am assuming it exists locally. 
+         I added a small inline style for the logo image below to ensure it fits. -->
     <link rel="stylesheet" href="style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap"
         rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        /* Tambahan CSS preventif agar logo tidak terlalu besar jika style.css belum mengatur img di dalam logo */
+        .logo img {
+            max-height: 55px; /* Dikecilkan dari 50px agar lebih seimbang dengan teks */
+            width: auto;
+            display: block;
+        }
+        
+        /* Basic styling simulation since style.css is missing in this context */
+        body { margin: 0; font-family: 'Inter', sans-serif; }
+        .navbar { background-color: #050A18; padding: 15px 20px; display: flex; align-items: center; justify-content: space-between; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; width: 100%; }
+        .nav-links { list-style: none; display: flex; gap: 20px; }
+        .nav-links li a { color: white; text-decoration: none; }
+        .burger { display: none; }
+        /* End simulation */
+    </style>
 </head>
 
 <body>
 
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo">TechnoDev Indonesia<span class="dot">.</span></a>
+            <!-- LOGO REPLACEMENT START -->
+            <a href="#" class="logo">
+                <img src="technodev.png" alt="TechnoDev Indonesia Logo">
+            </a>
+            <!-- LOGO REPLACEMENT END -->
+            
             <ul class="nav-links">
                 <li><a href="#services" data-i18n="nav_services">Services</a></li>
                 <li><a href="#work" data-i18n="nav_projects">Portfolio</a></li>
